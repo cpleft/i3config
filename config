@@ -172,7 +172,6 @@ bindsym XF86AudioPrev exec playerctl previous
 exec feh --bg-scale /home/waterlemon/Pictures/a2a5b020c3cc536a4d91daa407de4689.jpg
 
 # input solution
-exec --no-startup-id export GTK_IM_MODULE=ibus
-exec --no-startup-id export XMODIFIERS=@im=ibus
-exec --no-startup-id export QT_IM_MODULE=ibus
-exec --no-startup-id ibus-daemon --xim -d -r
+exec --no-startup-id export GTK_IM_MODULE=fcitx
+exec --no-startup-id export QT_IM_MODULE=fcitx
+exec --no-startup-id export XMODIFIERS="@im=fcitx"
